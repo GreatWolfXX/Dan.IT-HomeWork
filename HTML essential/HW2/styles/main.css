@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/*NAVIGATION START*/
+.navigation {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    display: flex;
+    margin: 25px 0 25px;
+    justify-content: center;
+}
+
+.navigation-list-item{
+    margin-right: 72px;
+}
+
+.navigation-list-item:last-child{
+    margin-right: 0;
+}
+
+.navigation-list-item-link {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.navigation-list-item-link:visited {
+    color: #FF0000;
+}
+
+.navigation-list-item-link:hover {
+    color: #db0a0a;
+}
+/*NAVIGATION END*/
+
+/*MAIN START*/
+
+/*HEADER START*/
+.main-header {
+    height: 789px;
+    background-image: url("../images/background/header.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+/*HEADER END*/
+
+/*INFORMATION START*/
+.main-information {
+    max-width: 1145px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main-information-title {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 3.3px;
+    text-transform: uppercase;
+    color: #373737;
+    text-align: center;
+    margin: 49px 0 38px;
+}
+
+.main-information-text {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    color: #373737;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.main-information-button {
+    width: 191px;
+    margin: 66px auto 42px;
+}
+
+.main-information-button-get__started {
+    width: 100%;
+    height: 51px;
+    background: #ff0000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.main-information-button-get__started:focus, .main-information-button-get__started:active {
+    outline: none;
+}
+/*INFORMATION END*/
+
+/*MAIN END*/
+
+/*FOOTER START*/
+.footer {
+    max-width: 1070px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-text-copyright {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2.4px;
+    color: #373737;
+    text-align: end;
+    padding: 40px 0 29px;
+}
+/*FOOTER END*/
