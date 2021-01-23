@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 /*NAVIGATION START*/
 .navigation {
-    max-width: 620px;
+    max-width: 680px;
     width: 100%;
     margin: 0 auto;
 }
@@ -13,10 +13,6 @@
 .navigation-list-item{
     margin-right: 72px;
     display: inline-block;
-}
-
-.navigation-list-item:last-child{
-    margin-right: 0;
 }
 
 .navigation-list-item-link {
