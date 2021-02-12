@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 
 .container {
     background: #F2F2F2;
@@ -54,7 +54,7 @@
 }
 
 .menu-item {
-    padding-right: 35px;
+    margin-right: 35px;
 }
 
 .item-last {
@@ -168,12 +168,15 @@
 }
 
 .clients-title {
+    display: grid;
+    grid-row-gap: 87px;
     font-family: Open Sans, sans-serif;
     font-weight: bold;
     font-size: 32px;
     line-height: 44px;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 106px;
 }
 
 .clients-title::after {
@@ -182,7 +185,7 @@
     width: 60px;
     height: 3px;
     background: #18B4CF;
-    margin: 87px auto 106px;
+    margin: 0 auto;
 }
 
 .clients-logos {
@@ -239,7 +242,17 @@
     align-content: center;
     grid-row-gap: 14px;
     text-align: center;
+    padding: 12px 14px 0 14px ;
     background: #F9F7F7;
+}
+
+.news-information-biggest {
+    text-align: right;
+    padding: 0 24px 0 0;
+}
+
+.news-information-small {
+    padding: 0;
 }
 
 .news-title {
@@ -250,11 +263,16 @@
     color: #353A3D;
 }
 
+.news-title-half {
+    text-align: right;
+}
+
 .news-text {
     font-family: Open Sans, sans-serif;
     font-weight: 600;
     font-size: 14px;
     line-height: 21px;
+    text-align: right;
     color: #5B6469;
 }
 
