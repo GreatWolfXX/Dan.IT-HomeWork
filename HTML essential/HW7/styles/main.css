@@ -1,49 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-.main {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+body {
     background: #0E0E0E;
 }
 
-.main::after {
-    padding: 60px;
+.main {
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    left: 0;
+    right: 0;
     background: #111110;
 }
 
+.main-screen {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
 .container {
-    position: fixed;
-    max-width: 530px;
-    left: calc(50% - 530px);
-    right: calc(50% - 530px);
+    position: absolute;
+    max-width: 500px;
+    left: calc(50% - 500px);
+    right: calc(50% - 500px);
     width: 100%;
     margin: 0 auto;
-    animation: scroll 30s infinite;
+    animation: scroll 30s infinite linear;
 }
 
 .main-text {
-    font-family: Roboto, sans-serif;
-    font-weight: normal;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
     font-size: 24px;
     line-height: 150%;
-    text-transform: uppercase;
     text-align: left;
     color: #F9CE00;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .main-text:nth-child(1),.main-text:nth-child(2) {
     text-align: center;
+    text-transform: uppercase;
+}
+
+.audio-control {
+    opacity: 30%;
 }
 
 @keyframes scroll {
     0%{
-        transform: perspective(300px) rotateX(30deg) translateZ(50px) translateY(550px);
+        transform: perspective(300px) rotateX(35deg) translateZ(20px) translateY(500px);
     }
     100%{
-        transform: perspective(300px) rotateX(30deg) translateZ(50px) translateY(-300px);
+        transform: perspective(300px) rotateX(35deg) translateZ(20px) translateY(-300px);
     }
 }
