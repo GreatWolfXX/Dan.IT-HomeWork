@@ -10,6 +10,7 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+
 /* TOP-INFORMATION START */
 
 .top-information {
@@ -80,12 +81,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 17px;
 }
 
 .item-container {
     text-decoration: none;
+}
+
+.item-container:nth-child(4), .item-container:nth-child(5), .item-container:nth-child(6) {
     margin-top: 17px;
 }
+
 
 .item-information {
     position: relative;
@@ -106,7 +112,7 @@ body {
 }
 
 .hover-block {
-    visibility: hidden;
+    /*visibility: hidden;*/
     display: flex;
     justify-content: space-between;
     align-items: flex-end;

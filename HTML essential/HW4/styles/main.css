@@ -16,7 +16,7 @@
     line-height: 37px;
     text-transform: uppercase;
     color: #18B4CF;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -97,7 +97,7 @@
     font-size: 27px;
     line-height: 37px;
     color: #FFFFFF;
-    padding-bottom: 44px;
+    margin-bottom: 44px;
 }
 
 .header-button {
@@ -196,11 +196,11 @@
 }
 
 .clients-logos-img {
-    padding-right: 58px;
+    margin-right: 58px;
 }
 
 .logo-last {
-    padding-right: 0;
+    margin-right: 0;
 }
 /* CLIENTS END */
 
@@ -277,6 +277,7 @@
 }
 
 .bottom-title {
+    text-align: center;
     padding: 14px 27px 11px;
 }
 
