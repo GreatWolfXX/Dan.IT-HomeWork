@@ -8,7 +8,7 @@ body {
 .container {
     max-width: 1030px;
     width: 100%;
-    margin: 0 auto;
+    margin: 50px auto;
 }
 
 /* TOP-INFORMATION START */
@@ -16,7 +16,7 @@ body {
 .top-information {
     display: flex;
     justify-content: space-between;
-    margin-top: 51px;
+    margin-bottom: 17px;
 }
 
 .main-logo {
@@ -81,7 +81,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 17px;
 }
 
 .item-container {
@@ -94,11 +93,15 @@ body {
 
 
 .item-information {
+    overflow: hidden;
     position: relative;
 }
 
 .item-image {
     width: 300px;
+    border: 2px solid #FFFFFF;
+    border-image: linear-gradient(to right top, #FFFFFF, #000000);
+    border-image-slice: 1;
 }
 
 .item-container-text {
@@ -112,15 +115,15 @@ body {
 }
 
 .hover-block {
-    /*visibility: hidden;*/
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     box-sizing: border-box;
-    width: 300px;
+    width: 100%;
 
     position: absolute;
-    bottom: 0;
+    bottom: -60px;
+    transition: bottom 0.5s;
 
     padding: 7px 16px 12px;
 
@@ -133,7 +136,8 @@ body {
 }
 
 .item-container:hover .hover-block {
-    visibility: visible;
+    bottom: 0;
+    transition: bottom 0.5s;
 }
 
 .item-container:hover .item-container-text{
