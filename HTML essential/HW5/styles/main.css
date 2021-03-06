@@ -85,12 +85,8 @@ body {
 
 .item-container {
     text-decoration: none;
+    margin-bottom: 17px;
 }
-
-.item-container:nth-child(4), .item-container:nth-child(5), .item-container:nth-child(6) {
-    margin-top: 17px;
-}
-
 
 .item-information {
     overflow: hidden;
@@ -99,6 +95,7 @@ body {
 
 .item-image {
     width: 300px;
+    height: 220px;
     border: 2px solid #FFFFFF;
     border-image: linear-gradient(to right top, #FFFFFF, #000000);
     border-image-slice: 1;

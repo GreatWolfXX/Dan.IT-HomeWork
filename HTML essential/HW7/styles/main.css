@@ -20,6 +20,7 @@ body {
 
 .container {
     position: absolute;
+    transform: perspective(300px) rotateX(35deg) translateZ(20px);
     max-width: 500px;
     left: calc(50% - 500px);
     right: calc(50% - 500px);
@@ -28,7 +29,7 @@ body {
     animation: scroll 30s infinite linear;
 }
 
-.main-text {
+.text {
     font-family: Arial, sans-serif;
     font-weight: bold;
     font-size: 24px;
@@ -38,7 +39,7 @@ body {
     margin-bottom: 20px;
 }
 
-.main-text:nth-child(1),.main-text:nth-child(2) {
+.title {
     text-align: center;
     text-transform: uppercase;
 }
@@ -49,9 +50,9 @@ body {
 
 @keyframes scroll {
     0%{
-        transform: perspective(300px) rotateX(35deg) translateZ(20px) translateY(500px);
+        transform: translateY(500px);
     }
     100%{
-        transform: perspective(300px) rotateX(35deg) translateZ(20px) translateY(-300px);
+        transform: translateY(-300px);
     }
 }
