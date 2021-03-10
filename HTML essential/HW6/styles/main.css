@@ -189,7 +189,7 @@ body {
 .input-information {
     width: 100%;
     box-sizing: border-box;
-    padding: 16px 0 16px 20px;
+    padding: 16px 20px;
     border: 1px solid #F2F2F2;
     outline: 0;
     border-radius: 4px;
@@ -219,6 +219,7 @@ body {
 
 
 .btn-create-account {
+    width: 100%;
     background: rgba(60, 184, 120, 0.8);
     border-radius: 4px;
     border: none;
@@ -229,7 +230,7 @@ body {
     font-size: 16px;
     line-height: 16px;
     color: #FFFFFF;
-    padding: 16px 99px;
+    padding: 16px 0;
     margin-top: 20px;
 }
 
