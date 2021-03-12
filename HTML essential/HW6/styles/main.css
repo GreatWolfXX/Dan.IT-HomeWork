@@ -31,8 +31,11 @@ body {
 }
 
 .menu-btn {
-    fill:white;
     margin-right: 25px;
+}
+
+.menu-svg-btn {
+    fill:white;
 }
 
 .authorization-text::before {
@@ -79,6 +82,7 @@ body {
 .title-sign-up {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     margin-bottom: 15px;
 }
 
@@ -87,7 +91,6 @@ body {
     font-weight: normal;
     font-size: 20px;
     line-height: 20px;
-    margin-right: 216px;
 }
 
 .text-sign-up::before {
@@ -194,15 +197,22 @@ body {
     outline: 0;
     border-radius: 4px;
     margin-bottom: 15px;
-}
 
-.input-information::placeholder {
     font-family: Ubuntu, sans-serif;
     font-weight: normal;
     font-size: 14px;
     line-height: 14px;
+}
+
+.input-information::placeholder {
     color: #BEBEBE;
 }
+
+.input-information:focus {
+    color: #434343;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.21);
+}
+
 
 .check-conditions {
     font-family: Ubuntu, sans-serif;
@@ -264,13 +274,4 @@ body {
 
 .btn-create-account:hover {
     background: #01813F;
-}
-
-.input-information:focus {
-    font-family: Ubuntu, sans-serif;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    color: #434343;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.21);
 }
