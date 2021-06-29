@@ -1,0 +1,32 @@
+@mixin filter-style {
+  margin-right: 20px;
+  padding: 5px 30px 5px 5px;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.9px;
+
+  outline: none;
+  border: 2px solid black;
+  border-radius: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin input-login-in-style {
+  margin-bottom: 25px;
+
+  padding: 10px 15px;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+
+  outline: none;
+  border: 2px solid black;
+  border-radius: 0;
+}

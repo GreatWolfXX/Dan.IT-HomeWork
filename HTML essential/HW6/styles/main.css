@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+body {
+    background-image: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* NAVIGATION START */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 79px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.site-name {
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: color 0.5s;
+    text-decoration: none;
+}
+
+.navigation-menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    margin-right: 25px;
+}
+
+.menu-svg-btn {
+    fill:white;
+    transition: fill 0.5s;
+}
+
+.authorization-text::before {
+    content: '';
+    padding: 0 0.5px;
+    background: rgba(255, 255, 255, 0.9);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-right: 27px;
+}
+
+.authorization-text, .authorization-link{
+    font-family: Ubuntu, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    transition: color 0.5s;
+}
+
+.authorization-link {
+    text-decoration: none;
+}
+
+/* NAVIGATION END */
+
+/* MODAL-VIEW START */
+
+.sign-up-container {
+    height: calc(100vh - 61px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-view {
+    position: relative;
+    width: 444px;
+    box-sizing: border-box;
+    padding: 31px 60px 38px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.52);
+}
+
+.title-sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.text-sign-up {
+    font-family: Ubuntu, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.text-sign-up::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 0;
+    background: #3CB878;
+}
+
+.text-log-in {
+    font-family: Ubuntu, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration: none;
+    color: #3CB878;
+    transition: color 0.5s;
+}
+
+.another-type-log-in {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+}
+.facebook-log-in-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 22px 10px 17px;
+    border: none;
+    outline: 0;
+    border-radius: 4px;
+    background: #305DB8;
+    transition: background 0.5s;
+}
+
+.text-facebook, .text-google {
+    font-family: Ubuntu, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-left: 19px;
+}
+
+.text-facebook::before , .text-google::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 28px;
+    background: #0A162F;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    vertical-align: -50%;
+    margin-right: 18px;
+}
+
+.google-log-in-btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 27px 10px 12px;
+    border: none;
+    outline: 0;
+    border-radius: 4px;
+    background: #DF4A32;
+    transition: background 0.5s;
+}
+
+.text-google {
+   margin-left: 7px;
+}
+
+.text-google::before {
+    margin-right: 30px;
+}
+
+.text-or {
+    font-family: Ubuntu, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #848484;
+    margin-bottom: 11px;
+}
+
+.text-or::before, .text-or::after {
+    content: '';
+    display: inline-block;
+    width: 152px;
+    height: 1px;
+    background: #F2F2F2;
+    vertical-align: 25%;
+    margin-right: 3px;
+}
+
+.text-or::after {
+    margin-right: 0;
+    margin-left: 3px;
+}
+
+.input-information {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 20px;
+    border: 1px solid #F2F2F2;
+    outline: 0;
+    border-radius: 4px;
+    margin-bottom: 15px;
+
+    font-family: Ubuntu, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.input-information::placeholder {
+    color: #BEBEBE;
+}
+
+.input-information:focus {
+    color: #434343;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.21);
+}
+
+
+.check-conditions {
+    font-family: Ubuntu, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 14px;
+    color: #434343;
+}
+
+.check-conditions-link {
+    color: #3CB878;
+    transition: color 0.5s;
+    text-decoration: none;
+}
+
+
+
+.btn-create-account {
+    width: 100%;
+    background: rgba(60, 184, 120, 0.8);
+    transition: background 0.5s;
+    border-radius: 4px;
+    border: none;
+    outline: 0;
+
+    font-family: Ubuntu, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding: 16px 0;
+    margin-top: 20px;
+}
+
+/* MODAL-VIEW END */
+
+.site-name:hover {
+    color: #236C47;
+}
+
+.menu-svg-btn:hover {
+    fill: #236C47;
+}
+
+.authorization-link:hover {
+    color:  #236C47;;
+}
+
+.text-log-in:hover, .check-conditions-link:hover {
+    text-decoration: underline;
+    color: #01813F;
+}
+
+.facebook-log-in-btn:hover {
+    background: #022263;
+}
+
+.google-log-in-btn:hover {
+    background: #AB1F09;
+}
+
+.btn-create-account:hover {
+    background: #01813F;
+}
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+label > input[type="checkbox"]:checked,
+label > input[type="checkbox"]:not(:checked) {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+label:before > input[type="checkbox"]:checked,
+label:before > input[type="checkbox"]:not(:checked){
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+label:before > input[type="checkbox"]:checked,
+label:before > input[type="checkbox"]:not(:checked) {
+    border-radius: 2px;
+}
+
+

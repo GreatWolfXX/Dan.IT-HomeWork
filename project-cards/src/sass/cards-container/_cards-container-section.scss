@@ -1,0 +1,117 @@
+.cards-container {
+  width: 90vw;
+  min-height: 70vh;
+
+  margin: 30px auto 40px;
+
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.cards-container__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.cards-container__box--empty {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: normal;
+}
+
+.text-empty {
+  display: none;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+
+  color: black;
+}
+
+.text-empty--active {
+  display: block;
+}
+
+.box__card {
+  align-self: flex-start;
+  position: relative;
+  padding: 15px 30px;
+  margin: 20px;
+
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.box__card--original {
+  display: none;
+}
+
+.box__card--hide {
+  display: none;
+}
+
+.card__btn-close {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.card__full-name-label {
+  margin-right: 10px;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+
+.card__full-name {
+  margin-bottom: 8px;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+
+
+  color: black;
+}
+
+.card__doctor-label {
+  margin-right: 10px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+}
+
+.card__doctor {
+  margin-bottom: 12px;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+
+  color: black;
+}
+
+.card__btn-more {
+  @include input-login-in-style;
+  padding: 8px;
+  margin-bottom: 0;
+  background: none;
+}
+
+.card__btn-edit {
+  @include input-login-in-style;
+  padding: 8px;
+  margin-bottom: 0;
+  background: none;
+}

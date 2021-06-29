@@ -1,0 +1,161 @@
+.create-edit-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.create-edit-container--active {
+  display: block;
+}
+
+.create-edit-container__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+
+  background: white;
+}
+
+.box__btn-edit {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.box__form-edit {
+  padding: 70px 50px 20px;
+  transition: width 0.5s;
+  text-align: center;
+}
+
+.types-doctor {
+  @include filter-style;
+  font-size: 18px;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.form-edit__info-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-form__main-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.main-info__full-name {
+  @include input-login-in-style;
+}
+
+.main-info__edit-purpose {
+  @include input-login-in-style;
+}
+
+.main-info__edit-description {
+  @include input-login-in-style;
+  resize: none;
+}
+
+.chose-priority__text-priority {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+.chose-priority__edit-priority {
+  @include filter-style;
+}
+
+/* CARDIOLOGIST START */
+
+.info-form__cardiologist-info {
+  display: none;
+  flex-direction: column;
+}
+
+.info-form__cardiologist-info--active {
+  display: flex;
+}
+
+.cardiologist-info__age {
+  @include input-login-in-style;
+}
+
+.cardiologist-info__body-mass-index {
+  @include input-login-in-style;
+}
+
+.cardiologist-info__normal-pressure {
+  @include input-login-in-style;
+}
+
+.cardiologist-info__past-diseases {
+  @include input-login-in-style;
+  resize: none;
+}
+
+/* CARDIOLOGIST END */
+
+/* DENTIST START */
+
+.info-form_dentist-info {
+  display: none;
+}
+
+.info-form_dentist-info--active {
+  display: block;
+}
+
+.dentist-info__date-text {
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+.dentist-info__date {
+  @include input-login-in-style;
+}
+
+/* DENTIST END */
+
+/* DENTIST START */
+
+.info-form_therapist-info {
+  display: none;
+}
+
+.info-form_therapist-info--active {
+  display: block;
+}
+
+.therapist-info__age {
+  @include input-login-in-style;
+}
+
+/* DENTIST END */
+
+.form-edit__confirm-btn {
+  @include input-login-in-style;
+  margin-top: 20px;
+  background: none;
+}

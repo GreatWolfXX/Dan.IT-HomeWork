@@ -1,0 +1,113 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');*/
+
+* {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1145px;
+    margin: 0 auto;
+}
+
+/*NAVIGATION START*/
+.navigation {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    padding: 25px 0 25px;
+    text-align: center;
+}
+
+.navigation-list-item{
+    margin-right: 72px;
+    display: inline-block;
+}
+
+.navigation-list-item-link {
+    /*font-family: Montserrat, sans-serif;*/
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FF0000;
+    text-decoration: none;
+}
+
+.navigation-list-item-last {
+    margin-right: 0;
+    display: inline-block;
+}
+/*NAVIGATION END*/
+
+/*MAIN START*/
+
+/*HEADER START*/
+.main-image {
+    width: 100%;
+}
+/*HEADER END*/
+
+/*INFORMATION START*/
+.main-information {
+    margin-top: 49px;
+    text-align: center;
+}
+
+.main-information-title {
+    /*font-family: Montserrat, sans-serif;*/
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 3.3px;
+    text-transform: uppercase;
+    color: #373737;
+    margin: 0 0 38px;
+}
+
+.main-information-text {
+    /*font-family: Montserrat, sans-serif;*/
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    color: #373737;
+    margin-bottom: 28px;
+}
+
+.main-information-button-get__started {
+    width: 191px;
+    height: 51px;
+    background: #ff0000;
+    border: none;
+    border-radius: 4px;
+    margin: 66px auto 0;
+
+    /*font-family: Montserrat, sans-serif;*/
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+/*INFORMATION END*/
+
+/*MAIN END*/
+
+/*FOOTER START*/
+.footer {
+    max-width: 1070px;
+    width: 100%;
+    margin: 82px auto 42px;
+}
+
+.footer-text-copyright {
+    /*font-family: Montserrat, sans-serif;*/
+    font-weight: bold;
+    line-height: 20px;
+    letter-spacing: 2.4px;
+    color: #373737;
+    text-align: end;
+}
+/*FOOTER END*/

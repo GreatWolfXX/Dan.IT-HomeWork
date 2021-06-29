@@ -1,0 +1,61 @@
+.menu {
+  padding: 10px 0;
+
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.menu__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 50px;
+}
+
+.box__logo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo {
+  margin-right: 5px;
+}
+
+.title {
+  padding-bottom: 6px;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  border-bottom: 2px solid black;
+
+  color: black;
+}
+
+.box__authorization {
+
+}
+
+.btn-login {
+  padding: 15px 30px;
+
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+
+  color: white;
+
+  border: 0;
+  outline: none;
+
+  background: black;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

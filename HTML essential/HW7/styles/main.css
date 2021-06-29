@@ -1,0 +1,58 @@
+body {
+    background: #0E0E0E;
+}
+
+.main {
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    background: #111110;
+}
+
+.main-screen {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    transform: perspective(300px) rotateX(35deg) translateZ(20px);
+    max-width: 500px;
+    left: calc(50% - 500px);
+    right: calc(50% - 500px);
+    width: 100%;
+    margin: 0 auto;
+    animation: scroll 30s infinite linear;
+}
+
+.text {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: left;
+    color: #F9CE00;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.audio-control {
+    opacity: 30%;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(-300px);
+    }
+}

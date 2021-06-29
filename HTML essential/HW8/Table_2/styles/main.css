@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@700,400&display=swap');
+
+
+body {
+    max-width: 1280px;
+    width: 100%;
+    margin: 50px auto;
+    background: #3A4965;
+
+    font-family: Arimo, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+td {
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.first-table {
+    margin-bottom: 15px;
+}
+
+.first-table-column:nth-of-type(odd) {
+    background: #FAFAFA;
+}
+
+.first-table-column:nth-of-type(even) {
+    background: #E3E3E3;
+}
+
+.table-name {
+    width: 200px;
+
+    margin: 25px 0 30px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+
+    color: #484848;
+}
+
+.text-name-first {
+    font-size: 14px;
+}
+
+.text-name-second {
+    font-size: 20px;
+}
+
+.information-block {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.block-text-type {
+    margin-top: 10px;
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #484848;
+}
+
+.type-column {
+    width: 200px;
+    background: #89C331;
+}
+
+.type-container {
+    margin: 23px 8px;
+}
+
+.column-red {
+    background: #F04A56;
+}
+
+.column-blue {
+    background: #20807C;
+}
+
+.type-text {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+
+.type-cost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 28px;
+
+    color: #FFFFFF;
+}
+
+.container-cost-up {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.container-cost-small {
+    font-size: 18px;
+}
+
+.container-cost-text {
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.button-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-text {
+    box-sizing: border-box;
+    padding: 20px 45px 10px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+
+    color: #FFFFFF;
+
+    border-bottom: 10px solid rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+
+    background: #484848;
+}
+
+.text-info {
+    font-size: 16px;
+    line-height: 24px;
+
+    color: #484848;
+}
+
+.second-table-column {
+    width: 160px;
+    box-shadow: 0 -2px 5px -2px rgba(0, 0, 0, 0.27);
+}
+
+.second-table-column:nth-of-type(even) {
+    background: #E3E3E3;
+}
+
+.second-table-column:nth-of-type(odd) {
+    background: #F2F2F2;
+}

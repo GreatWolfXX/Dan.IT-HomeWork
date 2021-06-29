@@ -1,0 +1,161 @@
+.container {
+    max-width: 1280px;
+    margin: 61px auto 30px;
+    width: 100%;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+/* HEADER START */
+
+.page-top {
+    margin-bottom: 50px;
+}
+
+.header-logo-text {
+    display: block;
+    font-size: 80px;
+    line-height: 94px;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 38px;
+}
+
+.text-blue {
+    color: #76CFFF;
+}
+
+.header-navigation-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    box-sizing: border-box;
+    background: #35444F;
+}
+
+.header-navigation-item {
+    box-sizing: border-box;
+    padding: 26px 36px 19px 36px;
+    border-left: 1px solid #FFFFFF;
+}
+
+.header-navigation-link {
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.hover-top-menu:hover {
+    background: #222F3A;
+}
+
+/* HEADER END */
+
+/* MAIN START */
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 54px;
+}
+
+.aside-navigation {
+    width: 344px;
+    border: 1px solid;
+}
+
+.aside-navigation-list {
+    list-style-type: none;
+}
+
+.aside-navigation-item {
+    padding: 26px 0 26px 44px;
+}
+
+.hover-aside-menu:hover {
+    background: #DBDBDB;
+}
+
+.aside-navigation-link {
+    font-size: 27px;
+    line-height: 27px;
+    color: #485863;
+    text-decoration: none;
+}
+
+.main-information {
+    max-width: 885px;
+    width: 100%;
+}
+
+.main-information-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    padding: 75px 0;
+    margin-bottom: 37px;
+}
+
+.main-information-image {
+    transition: 0.3s;
+    width: 320px;
+}
+
+.main-information-image:hover {
+    transform: scale(1.1);
+}
+
+.main-information-text {
+    font-size: 18px;
+    line-height: 24px;
+    color: #2C2C2C;
+    margin-bottom: 34px;
+}
+
+/* MAIN END */
+
+/* FOOTER START */
+
+.bottom-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: rgba(99, 105, 110, 0.48);
+}
+
+.footer-navigation-list {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    list-style-type: none;
+}
+
+.footer-navigation-item {
+    margin-right: 40px;
+}
+
+.footer-navigation-link {
+    font-size: 28px;
+    line-height: 28px;
+    color: #0C1927;
+    text-decoration: none;
+}
+
+.hover-bottom-menu:hover {
+    color: #4781A9;
+    text-decoration: underline;
+}
+
+.footer-text-copyright {
+    font-size: 24px;
+    line-height: 24px;
+    color: #010101;
+}
+
+/* FOOTER END */
