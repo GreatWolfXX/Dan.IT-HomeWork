@@ -77,8 +77,10 @@ class Modal {
                 }
             })
             .then(token =>  {
-                this._token = token
-                this.renderAllCard(token);
+                if(token.ok) {
+                    this._token = token
+                    this.renderAllCard(token);
+                }
             })
 
     }
@@ -173,7 +175,6 @@ class Modal {
                             }
                             case 'Dentist': {
                                 const dentistCard = new VisitDentist(elem['name'], elem['purpose'], elem['description'], elem['priority'], elem['date']);
-                                console.log(elem)
                                 dentistCard.render(this._token, elem['id'])
                                 break;
                             }
@@ -204,7 +205,6 @@ class Modal {
 
     createModalView() {
         this.btnLogin.addEventListener('click', event => {
-            console.log('open')
             this.showModalView();
         })
         this._btnClose.forEach(elem => {
@@ -216,8 +216,7 @@ class Modal {
             this.createCard();
         })
         document.addEventListener('click', event => {
-            console.log(event.target.className.split(' ')[0])
-            switch (event.target.className.split(' ')[0]) {
+            switch ((event.target.className + '').split(' ')[0]) {
                 case 'create-visit-container': {
                     document.querySelector('.create-visit-container--active').classList.remove('create-visit-container--active');
                     break;
@@ -750,7 +749,6 @@ class Filter {
         const cardsList = [];
 
         response.forEach(elem => {
-            console.log(elem)
             if(elem['purpose'].includes(searchInput.value.trim())) {
                 document.getElementById(elem['id']).classList.remove('box__card--hide');
                 cardsList.push(document.getElementById(elem['id']))
@@ -764,7 +762,6 @@ class Filter {
                 document.getElementById(elem['id']).classList.add('box__card--hide');
             }
         })
-        console.log(cardsList)
         filter.filterByPriority(token, response, cardsList);
     }
 
